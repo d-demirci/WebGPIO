@@ -8,10 +8,10 @@ app = Flask(__name__)
 secure= False
 
 roomName = ['PINS']
-accName= [['GPIO2', 'GPIO3', 'GPIO4', 'GPIO14','GPIO15','GPIO17','GPIO18','GPIO27','GPIO22','GPIO23','GPIO24','GPIO10','GPIO9','GPIO25','GPIO11','GPIO8','GPIO7','GPIO5','GPIO6','GPIO12','GPIO13','GPIO19','GPIO16','GPIO26','GPIO20']]
-outPin = [[3,5,7,8,10,11,12,13,15,16,18,19,21,22,23,24,26,29,31,32,33,35,36,37,38,40]]
+accName= [['LED']]
+outPin = [[18]]
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
 for i in range(len(outPin)):
